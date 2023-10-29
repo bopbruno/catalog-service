@@ -32,5 +32,5 @@ jobs:
           sarif_file: ${{ steps.scan.outputs.sarif }}
       - name: Build, unit tests and integration tests
         run: |
-          chmod +x mvn
+          chmod +x .mvn
           ./mvnw build
